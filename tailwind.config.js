@@ -4,10 +4,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        "complex-gradient": `
-          radial-gradient(at 100% 10%, hsl(181, 69%, 14%) 0px, transparent 30%),
-          radial-gradient(at -30% 20%, hsl(181, 69%, 14%) 100px, transparent 40%)
-        `,
+        "background-gradient": `linear-gradient(98deg,#02b09b61,#5a89fd2e)`,
       },
       backgroundColor: {
         "custom-hsla": "hsla(180,100%,0%,1)",
@@ -16,6 +13,18 @@ export default {
         kalam: ["Kalam", "cursive"],
         montserrat: ["Montserrat", "sans-serif"],
         spaceGrotesk: ["Space Grotesk", "sans-serif"],
+        playwrite: ["Playwrite AR", " cursive"],
+        DMSANS: ["DM Sans", "sans-serif"],
+      },
+      keyframes: {
+        "border-spin": {
+          "100%": {
+            transform: "rotate(360deg)",
+          },
+        },
+      },
+      animation:{
+        'border-spin':'border-spin 2s linear infinite'
       },
     },
   },

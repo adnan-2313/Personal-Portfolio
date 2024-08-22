@@ -1,38 +1,40 @@
 // import HeroImage from "../Utils/HeroImage.png";
-import Header from "./Header";
-import Navbar from "./Navbar";
+import { FaWhatsapp } from "react-icons/fa";
+
 const HeroSection = () => {
   return (
-    <div className="relative  bg-custom-hsla  z-[10] bg-complex-gradient flex flex-col justify-center items-center gap-10  p-[20px_30px] ">
-      <Header />
-      <main className="flex flex-row relative w-full justify-between items-center  max-w-[1100px] ">
-        <div className="w-[100%]  py-[40px]">
-          <div className="flex justify-center items-center  bg-[#14e9b3]  h-[24rem] w-[24rem]  rotate-[45deg]">
-            <img
-              className="z-[-10] rotate-[-45deg] top-[0px] left-[10rem]  w-[25rem]"
-              alt=""
-            />
-          </div>
+    <main className="flex flex-row relative text-white  w-full justify-between mb-[1rem] max-w-[70rem]  ">
+      <div className="w-[100%] py-[40px]">
+        <div className="flex  justify-center rotate-[-45deg] z-[100]  items-center   h-[25rem] w-[25rem] ">
+          <img
+            className=" z-[-10] rotate-[-45deg] top-[0px] left-[10rem]  w-[25rem]"
+            alt=""
+          />
         </div>
-        <div className="w-[100%] font-montserrat flex flex-col p-[40px_20px]  ">
-          <h1 className="text-[#14e9b3] ">FRONT END DEVELOPER & PROGRAMMER</h1>
-          <p className="text-white font-spaceGrotesk text-[3rem] p-[30px_50px_0px_0px] font-semibold leading-[3.3rem]">
-            Entry-Level front end development services at low rates
-          </p>
-          <p className="text-gray-300 text-[1rem] mt-[20px] w-[75%] leading-[1.2rem]">
-            My mission is to design and develop a website that you and your
-            audience love
-          </p>
-          <div className="bg-gradient-to-r from-[#048276] to-[#011f1c]   text-[#7ed1ae] mt-[20px]   hover:bg-[#0a4641] w-[60%] rounded-[40px]  flex flex-row items-center">
-            <p className="m-[16px_0px_16px_28px]  w-[70%]">
-              Contact me on <span className="text-[#0a66c2]">Linkedin</span>
-            </p>
-            <span className="bg-[#19ffb3] rounded-[50%]   mx-[10px] h-[2.8rem] w-[2.8rem]"></span>{" "}
-          </div>
-        </div>
-      </main>
-      <Navbar />
-    </div>
+      </div>
+      <div className="w-[100%] font-montserrat flex flex-col">
+        <h1 className="bg-gradient-to-tr from-[#2cf8ff] to-[#18ffb0] bg-clip-text text-transparent text-[.875rem] ">
+          FRONT END DEVELOPER & PROGRAMMER
+        </h1>
+        <p className="font-spaceGrotesk text-[3.5rem] p-[20px_70px_0px_0px] font-semibold leading-[3.3rem]">
+          Entry-Level front end development services at low rates
+        </p>
+        <p className="text-gray-300 text-[1rem] font-medium mt-[20px] w-[75%] leading-[1.2rem]">
+          My mission is to design and develop a website that you and your
+          audience love .
+        </p>
+        <a
+          className=" bg-background-gradient  mt-[40px] 
+        transition-[all_.5s] w-[60%] hover:bg-[#0a4641] text-[1.15rem] rounded-[3.75rem] 
+        p-[.5rem_.5rem_.5rem_2rem] text-[#c6ffec] flex flex-row cursor-pointer justify-between items-center hover:bg-[linear-gradient(98deg_#02b09b61_#02b09b33)] hover:translate-y-[-1px] hover:shadow-[0_20px_40px_#2db58633]"
+        >
+          <div className="">Let's Chat On Whatsapp</div>
+          <span className="rounded-[50%] bg-[#18ffb0] text-black flex justify-center items-center text-[2.2rem]  h-[3.2rem] w-[3.2rem]">
+            <FaWhatsapp />
+          </span>{" "}
+        </a>
+      </div>
+    </main>
   );
 };
 

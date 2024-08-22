@@ -1,0 +1,57 @@
+import { projects } from "../Utils/constant";
+
+const ProjectSection = () => {
+  return (
+    <section
+      id="projects"
+      className="w-full flex flex-col justify-center  max-w-[90rem] px-[2.5rem] backdrop-blur-[200px] bg-[#000000] font-DMSANS"
+    >
+      <div className="w-[60%] mx-auto my-[2rem]">
+        <h1 className="font-spaceGrotesk text-center text-[6.9rem] text-white">
+          Project Work
+        </h1>
+      </div>
+      <div className="flex flex-wrap gap-4 max-lg:justify-center ">
+        {projects.map((project) => {
+          return (
+            <div
+              key={project.id}
+              className="bg-[#ccdcff1f]  flex flex-col  w-[24.7rem] gap-2 p-[1rem] rounded-[.75rem] transition-all 
+              duration-[0.5s] hover:duration-[0.5s] hover:bg-[#58586d1f] hover:transition-all hover:translate-y-[-10px] "
+            >
+              <div className="overflow-hidden">
+                <img
+                  src={project.image}
+                  loading="lazy"
+                  alt={project.title}
+                  className="rounded-[.5rem]  aspect-[16/9]  max-w-full inline-block w-full h-auto"
+                />
+              </div>
+              <div
+                className="rounded-[.5rem] flex flex-col justify-center  w-full p-[1.125rem_1.25rem] transition-all duration-200 hover:transition-all 
+              hover:duration-200 bg-[#ffffff0d] group-hover:bg-[#1811111c]"
+              >
+                <div className=" w-full flex flex-wrap">
+                  {project.tags.map((items) => {
+                    return (
+                      <span
+                        key={items}
+                        className="text-[1rem] bg-[#443f3f6c] p-[3px_5px] rounded-lg text-gray-400 m-[4px_3px]"
+                      >
+                        {items}
+                      </span>
+                    );
+                  })}
+                </div>
+                <h2 className="text-white text-[1.4rem]  w-[100%]">{project.title}</h2>
+                <h3 className="text-[.9rem] text-[rgba(177,178,179,0.5)] leading-3">{project.date}</h3>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </section>
+  );
+};
+
+export default ProjectSection;
