@@ -4,7 +4,7 @@ const ProjectSection = () => {
   return (
     <section
       id="projects"
-      className="w-full  flex flex-col  justify-center  max-w-[90rem] px-[2.5rem] backdrop-blur-[200px] bg-[#000000] font-DMSANS"
+      className="w-full  flex flex-col pb-[5rem] justify-center  max-w-[90rem] px-[2.5rem] backdrop-blur-[200px] bg-[#000000] font-DMSANS"
     >
       <div className="w-[60%] mx-auto my-[2rem]">
         <h1 className="font-spaceGrotesk text-center text-[6.9rem] text-white">

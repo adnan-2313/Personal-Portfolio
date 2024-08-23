@@ -1,5 +1,3 @@
-import React from "react";
-import { HiBadgeCheck } from "react-icons/hi";
 import { skills } from "../Utils/constant";
 const SkillsSection = () => {
   return (
@@ -29,9 +27,10 @@ const SkillsSection = () => {
                   return (
                     <div
                       key={index}
-                      className="flex text-[1.15rem] border-[1px] rounded-[1rem] border-[#bfe6d559] p-[10px_15px]  items-center gap-2"
+                      className="flex text-[1.15rem] border-[1px] rounded-[1rem] border-[#bfe6d559] p-[10px_15px]  
+                      items-center gap-2"
                     >
-                      <img src={skill.image} className="size-8"></img>
+                      <img src={skill.image} loading="lazy" alt={skill.name} className="size-8"></img>
                       <span>{skill.name}</span>
                     </div>
                   );
@@ -40,10 +39,12 @@ const SkillsSection = () => {
             </div>
           );
         })}
-        {/* <div className="w-full h-[5rem] z-[1] bg-[#2cf8ff] blur-[120px]   opacity-[0.5] inset-[auto_0%_0%_auto]"></div> */}
+        <div className="absolute w-full h-[2rem] z-[1] bg-[#2cf8ff] blur-[120px]   opacity-[0.5] inset-[auto_0%_0%_auto]"></div>
       </div>
-      <div className="z-[1] bg-[#18ffb0] blur-[120px] rounded-[50%] w-[30rem] h-[20rem] block absolute  opacity-[.7]   inset-[10%_auto_auto_-10%]"></div>
-      <div className="z-[1] bg-[#2cf8ff] blur-[120px] rounded-[50%] w-[20rem] h-[20rem]  absolute  opacity-[.56]   inset-[40%_0%_0%_80%]"></div>
+      <div className="z-[1] bg-[#18ffb0] blur-[120px] rounded-[50%] w-[30rem] h-[20rem] block absolute  opacity-[.7]  
+       inset-[20%_auto_auto_10%]"></div>
+      <div className="z-[1] bg-[#2cf8ff] blur-[120px] rounded-[50%] w-[20rem] h-[20rem] absolute 
+      opacity-[.56]   inset-[40%_0%_0%_80%]"></div>
     </section>
   );
 };

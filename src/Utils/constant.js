@@ -140,7 +140,7 @@ export const education = [
   {
     id: 0,
     img: "https://i.pinimg.com/736x/be/19/ee/be19ee98f14d64ae1fcaeef9d5158970.jpg",
-    school: "Lovely Professional University, Phagwara",
+    school: "Lovely Professional University, Phagwara Punjab",
     date: "Oct 2020 - June 2024",
     desc: "I am currently pursuing a Bachelor's degree in Computer Science and Engineering at Lovely Professional University, Phagwara.",
     degree: "Bachelor of Technology - BTech, Computer Science and Engineering",
@@ -148,14 +148,14 @@ export const education = [
   {
     id: 1,
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSW0kaZ_zUrNZgHajfgXjxE148sVkkoZK0d-Eioe0Cxw&s",
-    school: "Little Flower Convent School, Powayan Shahjahanpur Uttar Pradesh",
+    school: "Little Flower Convent School, Shahjahanpur Uttar Pradesh",
     date: "Apr 2018 - Apr 2019",
     desc: "I completed my class 12  education at Little Flower Convent School, where I studied Science with Computer Science.",
     degree: "Senior Secondary, Science with Computer",
   },
   {
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSW0kaZ_zUrNZgHajfgXjxE148sVkkoZK0d-Eioe0Cxw&s",
-    school: "Little Flower Convent School, Powayan Shahjahanpur Uttar Pradesh",
+    school: "Little Flower Convent School, Shahjahanpur Uttar Pradesh",
     date: "Apr 2017 - Apr 2018",
     desc: "I completed my class 10 high school education at Little Flower Convent School, where I studied Science with IT.",
     degree: "Secondary School, Science with  basic IT",
@@ -235,3 +235,30 @@ export const projects = [
     webapp: "#",
   },
 ];
+
+export const socialMedia = [
+  {
+    id:0,
+    title:"HOME",
+    link:"/",
+    icon:""
+  },
+  {
+    id:1,
+    title:"GITHUB",
+    link:"https://github.com/adnan-2313",
+    icon:""
+  },
+  {
+    id:2,
+    title:"LINKEDIN",
+    link:"https://www.linkedin.com/in/adnankhan123/",
+    icon:""
+  },
+  {
+    id:3,
+    title:"EMAIL ME",
+    link:"https://www.linkedin.com/in/adnankhan123/",
+    icon:""
+  },
+]
