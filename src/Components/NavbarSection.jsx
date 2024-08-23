@@ -13,7 +13,7 @@ const menuItems = [
 
 const Navbar = () => {
   return (
-    <div className="max-w-[60rem] z-[100]  w-[50rem] mb-[18rem] mx-auto sticky top-[2rem] bottom-[-8rem]">
+    <div className="max-w-[60rem] z-[100]  w-[50rem] mb-[22rem] mx-auto sticky top-[2rem] bottom-[-8rem]">
       <nav className="backdrop-blur-[30px] w-[100%] bg-[rgba(4,19,14,0.5)]  mt-[10px] bg-opacity-50 p-[20px_10px] max-lg:hidden 
       flex rounded-[50px]  border-gray-700 border-[0.1px] ">
         <ul className="text-white flex flex-row font-[450] items-center text-[0.9rem] font-DMSANS">

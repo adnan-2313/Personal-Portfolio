@@ -28,7 +28,7 @@ const HeroSection = () => {
         transition-[all_.5s] w-[60%] hover:bg-[#0a4641] text-[1.15rem] rounded-[3.75rem] 
         p-[.5rem_.5rem_.5rem_2rem] text-[#c6ffec] flex flex-row cursor-pointer justify-between items-center hover:bg-[linear-gradient(98deg_#02b09b61_#02b09b33)] hover:translate-y-[-1px] hover:shadow-[0_20px_40px_#2db58633]"
         >
-          <div className="">Let's Chat On Whatsapp</div>
+          <div className="">Let's Chat On WhatsApp</div>
           <span className="rounded-[50%] bg-[#18ffb0] text-black flex justify-center items-center text-[2.2rem]  h-[3.2rem] w-[3.2rem]">
             <FaWhatsapp />
           </span>{" "}

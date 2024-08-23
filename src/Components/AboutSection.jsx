@@ -78,7 +78,7 @@ const AboutSection = () => {
                 transformStyle: "preserve-3d",
               }}
             >
-              <div className="text-[5rem] ">Hi,I am</div>
+              <div className="text-[5rem] ">Hi, I am</div>
               <div className="text-[5rem]">Adnan Khan</div>
               <div className="text-[4rem]">Software Developer</div>
             </div>

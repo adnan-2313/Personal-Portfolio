@@ -4,7 +4,7 @@ const ProjectSection = () => {
   return (
     <section
       id="projects"
-      className="w-full flex flex-col justify-center  max-w-[90rem] px-[2.5rem] backdrop-blur-[200px] bg-[#000000] font-DMSANS"
+      className="w-full  flex flex-col  justify-center  max-w-[90rem] px-[2.5rem] backdrop-blur-[200px] bg-[#000000] font-DMSANS"
     >
       <div className="w-[60%] mx-auto my-[2rem]">
         <h1 className="font-spaceGrotesk text-center text-[6.9rem] text-white">
@@ -16,20 +16,20 @@ const ProjectSection = () => {
           return (
             <div
               key={project.id}
-              className="bg-[#ccdcff1f]  flex flex-col  w-[24.7rem] gap-2 p-[1rem] rounded-[.75rem] transition-all 
-              duration-[0.5s] hover:duration-[0.5s] hover:bg-[#58586d1f] hover:transition-all hover:translate-y-[-10px] "
+              className="bg-[#121212]  flex flex-col  w-[24.7rem] gap-2 p-[1rem] rounded-[.75rem] transition-all 
+              duration-[0.5s] hover:duration-[0.5s] shadow-xl hover:bg-[#050505] hover:transition-all hover:translate-y-[-10px] "
             >
               <div className="overflow-hidden">
                 <img
                   src={project.image}
                   loading="lazy"
                   alt={project.title}
-                  className="rounded-[.5rem]  aspect-[16/9]  max-w-full inline-block w-full h-auto"
+                  className="rounded-[.5rem] border-[1px] border-[#1b1b1b]  aspect-[16/9]  max-w-full inline-block w-full h-auto"
                 />
               </div>
               <div
                 className="rounded-[.5rem] flex flex-col justify-center  w-full p-[1.125rem_1.25rem] transition-all duration-200 hover:transition-all 
-              hover:duration-200 bg-[#ffffff0d] group-hover:bg-[#1811111c]"
+              hover:duration-200 bg-[#202020] shadow-md group-hover:bg-[#141313]"
               >
                 <div className=" w-full flex flex-wrap">
                   {project.tags.map((items) => {
