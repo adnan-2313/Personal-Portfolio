@@ -1,7 +1,9 @@
 import { skills } from "../Utils/constant";
 const SkillsSection = () => {
   return (
-    <section className="mt-[25rem] overflow-x-hidden   pb-[5rem]  w-full relative z-[-1] bg-[#0d101c80]">
+    <section className="mt-[25rem] overflow-x-hidden   pb-[5rem]  w-full relative z-[-1] 
+    bg-[#0d101c80]
+    ">
       <div className="w-[50%] mx-auto mt-[10rem]" id="skills">
         <h1 className="text-[6.9rem] text-white text-center font-spaceGrotesk">
           Skills

@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      screens:{
+        "tablet":'800px'
+      },
       backgroundImage: {
         "background-gradient": `linear-gradient(98deg,#02b09b61,#5a89fd2e)`,
       },

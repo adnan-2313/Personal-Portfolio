@@ -235,7 +235,7 @@ export const projects = [
     webapp: "#",
   },
 ];
-
+import { IoHomeOutline } from "react-icons/io5";
 export const socialMedia = [
   {
     id:0,

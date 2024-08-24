@@ -2,8 +2,9 @@ import { IoMdArrowDropdown } from "react-icons/io";
 import Marquee from "react-fast-marquee";
 const Header = () => {
   return (
-    <header className="z-[6] pt-[0]   w-full max-w-[1200px] p-[2rem_0rem] relative mt-[30px]   flex justify-between items-center">
-      <h1 className="font-playwrite text-[#14e9b3] text-xl ">AdnanKhan</h1>
+    <header className="z-[6] pt-[0] w-full max-w-[1200px] p-[2rem_0rem] relative mt-[30px] 
+    flex justify-between items-center">
+      <h1 className="font-playwrite text-[#14e9b3] max-xl:ml-[40px] text-xl">AdnanKhan</h1>
       <div className="font-DMSANS  flex items-center text-lg gap-10">
         {/* <h3 className="text-gray-600 cursor-pointer">Download Resume</h3> */}
 
