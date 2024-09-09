@@ -3,10 +3,10 @@ const EducationSection = () => {
   return (
     <section
       id="education"
-      className="z-[2] bg-black pt-24 w-full p-[2.5rem] font-DMSANS  overflow-hidden relative "
+      className="z-[2] bg-black pt-24 w-full p-[2.5rem] max-tablet:p-[1.5rem]  font-DMSANS  overflow-hidden relative "
     >
-      <div className="w-1/2 mx-auto">
-        <h1 className="text-[6.9rem] text-white text-center font-spaceGrotesk">
+      <div className="w-1/2 max-md:w-3/4 flex mx-auto flex-col items-center justify-center ">
+        <h1 className="text-[6.9rem] text-white text-center  font-spaceGrotesk">
           Education
         </h1>
         <p className="font-DMSANS    bg-gradient-to-tr from-[#dff2f3] to-[#f3f5f4] bg-clip-text text-transparent text-[1.25rem]  text-center">
@@ -14,12 +14,12 @@ const EducationSection = () => {
           educational details are as follows.
         </p>
       </div>
-      <div className="flex flex-col justify-center items-center mt-[20px] px-[10rem] gap-[1rem]">
+      <div className="flex flex-col justify-center items-center mt-[20px] px-[10rem] max-tablet:px-[5rem]  gap-[1rem]">
         {education.map((item) => {
           return (
             <div
               key={item.id}
-              className="w-[40.625rem] transition-all duration-[0.5s] hover:transition-all hover:duration-[0.5s] 
+              className="w-[40.625rem] max-sm:w-[38rem] transition-all duration-[0.5s] hover:transition-all hover:duration-[0.5s] 
               hover:translate-y-[-10px] cursor-default  z-[50]  border-[rgba(89,91,115,0.5)]  
               bg-[rgba(36,70,47,0.05)]  backdrop-blur-[40px] shadow-[0px_-2px_10px_rgba(0,0,0,0.5)] rounded-[10px] p-[12px_16px] flex flex-col 
               justify-between items-center gap-[12px]"

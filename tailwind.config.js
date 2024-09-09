@@ -4,7 +4,11 @@ export default {
   theme: {
     extend: {
       screens:{
-        "tablet":'800px'
+        "tablet":'800px',
+        "min-tablet":'700px',
+        "min-tab":'580px',
+        "phone":'500px',
+        "sm-phone":'430px'
       },
       backgroundImage: {
         "background-gradient": `linear-gradient(98deg,#02b09b61,#5a89fd2e)`,

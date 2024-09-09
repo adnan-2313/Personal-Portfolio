@@ -4,19 +4,20 @@ const ProjectSection = () => {
   return (
     <section
       id="projects"
-      className="w-full  flex flex-col pb-[5rem] justify-center  max-w-[90rem] px-[2.5rem] backdrop-blur-[200px] bg-[#000000] font-DMSANS"
+      className="w-full  flex flex-col pb-[5rem] justify-center  
+      max-w-[90rem] px-[2.5rem] max-phone:px-[1.5rem] max-sm-phone:px-[0.8rem] backdrop-blur-[200px] bg-[#000000] font-DMSANS"
     >
-      <div className="w-[60%] mx-auto my-[2rem]">
-        <h1 className="font-spaceGrotesk text-center text-[6.9rem] text-white">
-          Project Work
+      <div className="w-[60%] mx-auto my-[2rem] max-xl:w-[80%] max-tablet:w-[100%] ">
+        <h1 className="font-spaceGrotesk text-center text-[6.9rem] text-white max-tablet:text-[6rem] max-sm:text-[4rem] max-phone:text-[3rem] ">
+          Projects
         </h1>
       </div>
-      <div className="flex flex-wrap gap-4 max-lg:justify-center ">
+      <div className="flex flex-wrap gap-4 max-xl:justify-center ">
         {projects.map((project) => {
           return (
             <div
               key={project.id}
-              className="bg-[#121212]  flex flex-col  w-[24.7rem] gap-2 p-[1rem] rounded-[.75rem] transition-all 
+              className="bg-[#121212] group  flex flex-col  w-[24.7rem] gap-2 p-[1rem] rounded-[.75rem] transition-all 
               duration-[0.5s] hover:duration-[0.5s] shadow-xl hover:bg-[#050505] hover:transition-all hover:translate-y-[-10px] "
             >
               <div className="overflow-hidden">
@@ -28,7 +29,7 @@ const ProjectSection = () => {
                 />
               </div>
               <div
-                className="rounded-[.5rem] flex flex-col justify-center  w-full p-[1.125rem_1.25rem] transition-all duration-200 hover:transition-all 
+                className="rounded-[.5rem] flex flex-col justify-center  w-full p-[1.125rem_1.25rem]  transition-all duration-200 hover:transition-all 
               hover:duration-200 bg-[#202020] shadow-md group-hover:bg-[#141313]"
               >
                 <div className=" w-full flex flex-wrap">
@@ -36,7 +37,7 @@ const ProjectSection = () => {
                     return (
                       <span
                         key={items}
-                        className="text-[1rem] bg-[#443f3f6c] p-[3px_5px] rounded-lg text-gray-400 m-[4px_3px]"
+                        className="text-[1rem] bg-[#443f3f6c] group-hover:bg-[#1b19196c] p-[3px_5px] rounded-lg text-gray-400 m-[4px_3px]"
                       >
                         {items}
                       </span>
