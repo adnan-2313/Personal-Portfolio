@@ -141,7 +141,7 @@ export const education = [
     id: 0,
     img: "https://i.pinimg.com/736x/be/19/ee/be19ee98f14d64ae1fcaeef9d5158970.jpg",
     school: "Lovely Professional University, Phagwara Punjab",
-    date: "Oct 2020 - June 2024",
+    date: "2020 - 2024",
     desc: "I am currently pursuing a Bachelor's degree in Computer Science and Engineering at Lovely Professional University, Phagwara.",
     degree: "Bachelor of Technology - BTech, Computer Science and Engineering",
   },

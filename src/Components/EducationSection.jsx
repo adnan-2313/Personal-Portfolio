@@ -2,7 +2,7 @@ import { education } from "../Utils/constant";
 const EducationSection = () => {
   return (
     <section
-      id="education"
+     
       className="z-[2] bg-black pt-24 w-full p-[2.5rem] max-tablet:p-[1.5rem]  font-DMSANS  overflow-hidden relative "
     >
       <div className="w-1/2 max-md:w-3/4 flex mx-auto flex-col items-center justify-center ">
@@ -14,14 +14,14 @@ const EducationSection = () => {
           educational details are as follows.
         </p>
       </div>
-      <div className="flex flex-col justify-center items-center mt-[20px] px-[10rem] max-tablet:px-[5rem]  gap-[1rem]">
+      <div id="education" className="flex flex-col  justify-center items-center mt-[20px] px-[10rem] max-tablet:px-[5rem]  gap-[1rem]">
         {education.map((item) => {
           return (
             <div
               key={item.id}
               className="w-[40.625rem] max-sm:w-[38rem] transition-all duration-[0.5s] hover:transition-all hover:duration-[0.5s] 
               hover:translate-y-[-10px] cursor-default  z-[50]  border-[rgba(89,91,115,0.5)]  
-              bg-[rgba(36,70,47,0.05)]  backdrop-blur-[40px] shadow-[0px_-2px_10px_rgba(0,0,0,0.5)] rounded-[10px] p-[12px_16px] flex flex-col 
+              bg-[rgba(89,91,115,0.1)]  backdrop-blur-[40px] shadow-[0px_-2px_10px_rgba(0,0,0,0.5)] rounded-[10px] p-[12px_16px] flex flex-col 
               justify-between items-center gap-[12px]"
             >
               <div className="flex flex-row w-full  gap-[12px] justify-between">
@@ -47,9 +47,9 @@ const EducationSection = () => {
           );
         })}
       </div>
-      <div className="z-[1] bg-[#18ffb0] blur-[120px] rounded-[50%] w-[35rem] h-[20rem]  block absolute inset-[20%_0%_0%_-10%]  opacity-[.7]"></div>
-      <div className="z-[-1] bg-[#18aaff] blur-[120px] rounded-[50%] w-[30rem] h-[30rem]  absolute  opacity-[.56]   inset-[30%_0%_0%_60%]"></div>
-      <div className="w-full h-[5rem] z-[1] bg-gradient-to-r from-[#18ffb0] to-[#18aaff] blur-[120px]  absolute  opacity-[0.5] inset-[auto_0%_0%_auto]"></div>
+      <div className="z-[1] bg-[#18ffb0] blur-[120px] rounded-[50%] w-[35rem] h-[20rem]  block absolute inset-[20%_0%_0%_-10%]  opacity-[.4]"></div>
+      <div className="z-[-1] bg-[#18aaff] blur-[120px] rounded-[50%] w-[30rem] h-[30rem]  absolute  opacity-[.4]   inset-[30%_0%_0%_60%]"></div>
+      <div className="w-full h-[5rem] z-[1] bg-gradient-to-r from-[#18ffb0] to-[#18aaff] blur-[120px]  absolute  opacity-[0.4] inset-[auto_0%_0%_auto]"></div>
     </section>
   );
 };

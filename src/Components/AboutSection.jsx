@@ -1,14 +1,14 @@
-const LogoBox = ({ className, style, src, alt }) => (
+const LogoBox = ({ className, style,title }) => (
   <div className={`home-experience_box-logo  ${className} flex justify-center`} style={style}>
-    <span className="text-[1.1rem] max-sm-phone:text-[0.8rem]  flex justify-center tex-center font-medium font-spaceGrotesk uppercase">Soft Skill</span>
+    <span className="text-[1.1rem] max-sm-phone:text-[0.8rem]  flex justify-center tex-center font-medium font-spaceGrotesk uppercase">{title}</span>
   </div>
 );
 const AboutSection = () => {
   return (
-    <section className="px-[2.5rem] relative  ">
+    <section  className="px-[2.5rem] relative  ">
       <div className="w-full max-w-[73.75rem] mx-[auto_!important]">
         <div className="text-white flex flex-col  justify-center items-center max-w-none mx-auto relative  text-[6.25rem] top-0 leading-1 font-semibold font-spaceGrotesk ">
-          <div className="home-experience_text-wrapper max-lg:w-[50rem]  max-md:w-[40rem] max-phone:w-[33rem] max-phone:py-[1rem] max-sm-phone:py-[3rem]">
+          <div  className="home-experience_text-wrapper  max-lg:w-[50rem]  max-md:w-[40rem] max-phone:w-[33rem] max-phone:py-[1rem] max-sm-phone:py-[3rem]">
             <LogoBox
               className="z-[5] bottom-[66%] left-[27%] inset-[auto_auto_10%_-9%] max-md:left-[10%]  max-md:bottom-[75%] max-sm-phone:left-[15%] max-sm-phone:bottom-[90%]"
               style={{
@@ -17,7 +17,7 @@ const AboutSection = () => {
                   "translate3d(0px, 1.7604rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
                 transformStyle: "preserve-3d",
               }}
-              src="https://cdn.prod.website-files.com/65aa727d2cba3ce6160ccfb1/65aa727d2cba3ce6160ccffe_logo-webflow.svg"
+              title="Adaptability"
               alt="webflow logo"
             />
 
@@ -29,7 +29,7 @@ const AboutSection = () => {
                   "translate3d(1.29906rem, 0rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
                 transformStyle: "preserve-3d",
               }}
-              src="https://cdn.prod.website-files.com/65aa727d2cba3ce6160ccfb1/65aa727d2cba3ce6160cd055_client-first.svg"
+              title="Communication"
               alt=""
             />
 
@@ -41,7 +41,7 @@ const AboutSection = () => {
                   "translate3d(-2.7278rem, 0rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
                 transformStyle: "preserve-3d",
               }}
-              src="https://cdn.prod.website-files.com/65aa727d2cba3ce6160ccfb1/65aa727d2cba3ce6160cd060_logos-Attributes%20(1).svg"
+              title="Creativity"
               alt=""
             />
 
@@ -53,7 +53,7 @@ const AboutSection = () => {
                   "translate3d(-3.01288rem, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
                 transformStyle: "preserve-3d",
               }}
-              src="https://cdn.prod.website-files.com/65aa727d2cba3ce6160ccfb1/65aa727d2cba3ce6160ccfff_logo-figma.svg"
+              title="Reliability"
               alt="figma logo"
             />
 
@@ -65,7 +65,7 @@ const AboutSection = () => {
                   "translate3d(0px, 1.3307rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
                 transformStyle: "preserve-3d",
               }}
-              src="https://cdn.prod.website-files.com/65aa727d2cba3ce6160ccfb1/65aa727d2cba3ce6160ccff3_logo-finsweet.svg"
+              title="Resilience"
               alt="finsweet logo"
             />
 

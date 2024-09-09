@@ -6,16 +6,16 @@ const menuItems = [
       "bg-gradient-to-tr from-[#2cf8ff] to-[#18ffb0] bg-clip-text text-transparent",
     width: "11rem",
   },
+  { name: "ABOUT", link: "#About" },
   { name: "SKILLS", link: "#skills" },
   { name: "PROJECTS", link: "#projects" },
   { name: "EDUCATION", link: "#education" },
-  { name: "CERTIFICATION", link: "#certificates" },
 ];
 
 const Navbar = () => {
   return (
     <div className="max-w-[60rem] z-[100]  w-[50rem] mb-[22rem] mx-auto sticky top-[2rem] bottom-[-8rem]">
-      <nav
+      <nav id="About" 
         className="backdrop-blur-[30px] w-[100%] bg-[rgba(4,19,14,0.5)]  mt-[10px] bg-opacity-50 p-[20px_10px]  
       flex rounded-[50px]  border-gray-700 border-[0.1px] max-tablet:hidden"
       >
