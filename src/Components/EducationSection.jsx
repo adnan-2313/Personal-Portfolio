@@ -8,11 +8,11 @@ import TimelineDot from "@mui/lab/TimelineDot";
 const EducationSection = () => {
   return (
     <section className="z-[2] bg-black pt-24 w-full p-[2.5rem] max-tablet:p-[1.5rem]  font-DMSANS  overflow-hidden relative ">
-      <div className="w-1/2 max-md:w-3/4 flex mx-auto flex-col items-center justify-center ">
-        <h1 className="text-[6.9rem] text-white text-center  font-spaceGrotesk">
+      <div className="w-1/2 max-phone:w-full max-md:w-3/4 flex mx-auto flex-col items-center justify-center ">
+        <h1 className="text-[6.9rem] text-white text-center  font-spaceGrotesk max-md:text-[4rem] ">
           Education
         </h1>
-        <p className="font-DMSANS    bg-gradient-to-tr from-[#dff2f3] to-[#f3f5f4] bg-clip-text text-transparent text-[1.25rem]  text-center">
+        <p className="font-DMSANS    bg-gradient-to-tr from-[#dff2f3] to-[#f3f5f4] bg-clip-text text-transparent text-[1.25rem]  max-phone:text-[1rem]  text-center">
           My education has been a journey of self-discovery and growth. My
           educational details are as follows.
         </p>
@@ -25,7 +25,14 @@ const EducationSection = () => {
           return (
             <>
               <TimelineItem>
+              <TimelineSeparator>
+                  <TimelineDot variant="outlined" color="primary" />
+                  {index !== 2 && (
+                    <TimelineConnector style={{ background: "#18aaff" }} />
+                  )}
+                </TimelineSeparator>
                 <TimelineContent sx={{ py: "7px", px: 2 }}>
+                
                   <div
                     key={item.id}
                     className="w-[40.625rem]  max-md:w-[18.75rem] max-md:p-[10px] max-md:gap-[8px] transition-all duration-[0.5s] hover:transition-all hover:duration-[0.5s] 
@@ -58,20 +65,14 @@ const EducationSection = () => {
                     </div>
                   </div>
                 </TimelineContent>
-                <TimelineSeparator>
-                  <TimelineDot variant="outlined" color="primary" />
-                  {index !== 2 && (
-                    <TimelineConnector style={{ background: "#18aaff" }} />
-                  )}
-                </TimelineSeparator>
               </TimelineItem>
             </>
           );
         })}
       </div>
-      <div className="z-[1] bg-[#18ffb0]  blur-[120px] rounded-[50%] w-[35rem] h-[20rem]  block absolute inset-[20%_0%_0%_-10%]  opacity-[.4]"></div>
-      <div className="z-[-1] bg-[#18aaff]   blur-[120px] rounded-[50%] w-[30rem] h-[30rem]  absolute  opacity-[.4]   inset-[30%_0%_0%_60%]"></div>
-      <div className="w-full h-[5rem]   z-[1] bg-gradient-to-r from-[#18ffb0] to-[#18aaff] blur-[120px]  absolute  opacity-[0.4] inset-[auto_0%_0%_auto]"></div>
+      <div className="z-[1] bg-[#18ffb0]  blur-[120px] rounded-[50%] w-[35rem] h-[20rem]  block absolute inset-[20%_0%_0%_-10%]  opacity-[.4] max-md:opacity-[0.2] "></div>
+      <div className="z-[-1] bg-[#18aaff]   blur-[120px] rounded-[50%] w-[30rem] h-[30rem]  absolute  opacity-[.4] max-md:opacity-[0.2]  inset-[30%_0%_0%_60%]"></div>
+      <div className="w-full h-[5rem]   z-[1] bg-gradient-to-r from-[#18ffb0] to-[#18aaff] blur-[120px]  absolute  opacity-[0.4] max-md:opacity-[0.2]  inset-[auto_0%_0%_auto]"></div>
     </section>
   );
 };

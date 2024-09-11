@@ -23,11 +23,11 @@ const SkillsSection = () => {
           return (
             <div
               className="wrapper z-[4] bg-[rgba(89,91,115,0.1)] rounded-[1.25rem] border-[1px] border-[rgba(89,91,115,0.5)]  
-              backdrop-blur-[40px] text-white w-[25rem] h-[22rem] ] max-sm-phone:p-[35px_20px] "
+              backdrop-blur-[40px] text-white w-[25rem] "
               key={index}
             >
-              <div className="content flex flex-col justify-center  p-[40px_30px]">
-                <h3 className="text-[1.5rem] max-sm-phone:text-[1.2rem] text-center  font-spaceGrotesk">
+              <div className=" flex flex-col justify-center  p-[40px_30px]  ">
+                <h3 className="text-[1.5rem]  text-center  font-spaceGrotesk">
                   {items.title}
                 </h3>
                 <div className="flex flex-wrap gap-5 max-sm-phone:gap-3  justify-center mt-[20px] max-sm-phone:mt-[15px] w-full ">
