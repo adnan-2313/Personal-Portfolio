@@ -31,7 +31,7 @@ export default {
         },
       },
       animation:{
-        'border-spin':'border-spin 2s linear infinite'
+        'border-spin':'border-spin 7s linear infinite'
       },
     },
   },

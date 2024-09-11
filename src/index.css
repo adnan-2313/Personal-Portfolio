@@ -28,22 +28,19 @@ html {
 
 
 @layer utilities {
-  .skill-wrapper {
-    @apply relative rounded-2xl bg-[rgba(89, 91, 115, 0.06)] overflow-hidden;
-  }
+.card-wrapper{
+    @apply relative   bg-[rgba(89,91,115,0.1)] overflow-hidden  rounded-2xl
+   }
 
-  .skill-wrapper::before {
-    background: conic-gradient(rgba(221, 74, 29, 0.7) 120deg,
-        rgba(19, 48, 119, 0.7) 120deg,
-        rgba(224, 131, 9, 0.7) 100deg,
-        transparent 100deg);
-    @apply absolute h-full w-full top-0 left-0 content-[''] animate-border-spin z-[-1];
-  }
+   .card-wrapper::before{
+    background: conic-gradient(rgba(24, 165, 71, 0.836) 0deg, rgba(19, 145, 76, 0.863) 0deg, transparent 80deg);
+    @apply h-[150%] w-[150%] absolute top-[-25%] left-[-25%] content-['']  animate-[spin_7s_linear_infinite]
+   }
 
-  .skill-content {
-    @apply absolute w-[calc(25rem-2px)] h-auto top-[2px] left-[2px] right-[2px] bottom-[2px] bg-[rgba(89, 91, 115, 0.1)] rounded-2xl;
-  }
+   .card-content{
+    @apply absolute h-[calc(100%-4px)] w-[calc(100%-4px)] top-[2px]  left-[2px] bg-[rgba(89,91,115,0.1)] rounded-2xl
 
+   }
   .home-experience_text-wrapper {
     @apply z-[3] w-[60rem] flex-[1] items-start flex flex-col absolute;
   }

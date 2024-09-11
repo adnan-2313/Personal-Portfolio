@@ -6,8 +6,17 @@ import SkillsSection from "./Components/SkillsSection";
 import ProjectSection from "./Components/ProjectSection";
 import EducationSection from "./Components/EducationSection";
 import FooterSection from "./Components/FooterSection";
-
+import { useEffect, useState } from "react";
 const App = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <>
       <div className="relative overflow-hidden bg-custom-hsla antialiased z-[10] flex flex-col justify-center items-center mb-[100vh]">
