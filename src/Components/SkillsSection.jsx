@@ -1,11 +1,25 @@
+import { useEffect, useRef } from "react";
 import { skills } from "../Utils/constant";
+import img from "./../Utils/web_logo1.png"
+// import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const SkillsSection = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+      once: false,
+      disable: "tablet",
+    });
+  }, []);
+
   return (
     <section
-      className="mt-[25rem] overflow-hidden max-lgpx-[10rem]  pb-[5rem]  w-full relative z-[-1] 
+      className="mt-[25rem] overflow-hidden max-lg:px-[10rem]  pb-[5rem]  w-full relative z-[-1] 
     bg-[#0d101c80]
     "
     >
+    
       <div className="w-[50%] max-md:w-[70%] mx-auto mt-[10rem]" id="skills">
         <h1 className="text-[6.9rem] text-white text-center font-spaceGrotesk">
           Skills
@@ -22,6 +36,10 @@ const SkillsSection = () => {
         {skills.map((items, index) => {
           return (
             <div
+              data-aos={index % 2 === 0 ? "fade-left" : "fade-right"}
+              data-aos-offset="200"
+              data-aos-easing="ease-in-sine"
+              data-aos-duration="600"
               className="wrapper z-[4] bg-[rgba(89,91,115,0.1)] rounded-[1.25rem] border-[1px] border-[rgba(89,91,115,0.5)]  
               backdrop-blur-[40px] text-white w-[25rem] "
               key={index}

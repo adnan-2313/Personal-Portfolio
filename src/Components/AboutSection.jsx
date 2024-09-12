@@ -1,3 +1,4 @@
+import img from "./../Utils/web_logo1.png"
 const LogoBox = ({ className, style,title }) => (
   <div className={`home-experience_box-logo  ${className} flex justify-center`} style={style}>
     <span className="text-[1.1rem] max-sm-phone:text-[0.8rem]  flex justify-center tex-center font-medium font-spaceGrotesk uppercase">{title}</span>
@@ -106,6 +107,7 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
+     
     </section>
   );
 };

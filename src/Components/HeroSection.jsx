@@ -1,6 +1,7 @@
 // import HeroImage from "../Utils/HeroImage.png";
 import { FaWhatsapp } from "react-icons/fa";
 import MyImage from "../Utils/MyImage - Copy.jpg";
+import img from "./../Utils/web_logo1.png";
 const HeroSection = () => {
   return (
     <main className="flex flex-row relative  text-white max-lg:flex-col  w-full justify-between mb-[1rem] max-w-[75rem]  ">
@@ -8,7 +9,7 @@ const HeroSection = () => {
         <div className="flex justify-center max-lg:justify-start    z-[100]  items-center   ">
           <img
             src={MyImage}
-            className=" z-[-10]  top-[0px]  h-[35rem]  w-[30rem] max-min-tab:h-[30rem] max-min-tab:w-[25rem] max-phone:h-[25rem] max-phone:w-[22rem] "
+            className="z-[-10]  top-[0px]  h-[35rem]  w-[30rem] max-min-tab:h-[30rem] max-min-tab:w-[25rem] max-phone:h-[25rem] max-phone:w-[22rem] "
             alt=""
           />
         </div>
@@ -41,6 +42,17 @@ const HeroSection = () => {
             <FaWhatsapp />
           </span>{" "}
         </a>
+      </div>
+
+      <div className="absolute overflow-hidden border-[1px] backdrop-filter-[40px] bg-black border-gray-700 p-[15px]   left-[-4rem] font-montserrat text-white bottom-[4rem] text-xl rounded-[50%] ">
+        <img
+          src={img}
+          alt=""
+          loading="lazy"
+          className="h-[7.125rem] w-[7.125rem]  top-0 animate-[spin_7s_linear_infinite]"
+        />
+        {/* <span className="absolute left-[2.5rem] text-[0.8rem] top-[3.4rem]">HIRE ME</span> */}
+        <div className="bg-[#2cf8ff] blur-[40px] top-[2rem] left-[2rem] opacity-50 absolute rounded-[50%] w-[5.25rem] h-[5.25rem] z-1 "></div>
       </div>
     </main>
   );

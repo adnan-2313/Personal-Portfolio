@@ -5,7 +5,18 @@ import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
+  
 const EducationSection = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 3000,
+      once: false, 
+    });
+  }, []);
   return (
     <section className="z-[2] bg-black pt-24 w-full p-[2.5rem] max-tablet:p-[1.5rem]  font-DMSANS  overflow-hidden relative ">
       <div className="w-1/2 max-phone:w-full max-md:w-3/4 flex mx-auto flex-col items-center justify-center ">
@@ -34,6 +45,7 @@ const EducationSection = () => {
                 <TimelineContent sx={{ py: "7px", px: 2 }}>
                 
                   <div
+                   data-aos="fade-left"  
                     key={item.id}
                     className="w-[40.625rem]  max-md:w-[18.75rem] max-md:p-[10px] max-md:gap-[8px] transition-all duration-[0.5s] hover:transition-all hover:duration-[0.5s] 
               hover:translate-y-[-10px] cursor-default  z-[50]  border-[rgba(89,91,115,0.5)]  

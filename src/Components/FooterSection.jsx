@@ -5,7 +5,7 @@ const date = new Date();
 const year = date.getFullYear();
 export default function FooterSection() {
   return (
-    <footer className="fixed overflow-hidden z-[-1] w-full top-[0vh] h-[100vh] bg-black text-white">
+    <footer className="fixed overflow-hidden z-[-1] w-full top-[0vh] h-full  bg-black text-white">
       <div className="w-full h-[3rem] z-[50] bg-[#41ffd6] blur-[120px]    opacity-[1] inset-[50%_0%_0%_50%]"></div>
       <Marquee speed={190}>
         <div className="w-full overflow-y-hidden">
@@ -33,7 +33,7 @@ export default function FooterSection() {
             );
           })}
         </div>
-        <div className="mt-[50px] max-sm:mt-[120px] flex flex-row max-sm-phone:flex-col max-sm-phone:justify-center max-sm-phone:items-center justify-between ">
+        <div className="fixed  bottom-2 w-full lg:pr-[80px] flex flex-row max-sm-phone:flex-col max-sm-phone:justify-center max-sm-phone:items-center justify-between ">
           <span className="font-playwrite  text-[1.2rem] max-phone:text-[1rem] font-medium">
             Adnankhan
           </span>
