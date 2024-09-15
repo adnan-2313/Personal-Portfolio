@@ -1,15 +1,15 @@
 import { useEffect, useRef } from "react";
 import { skills } from "../Utils/constant";
-import img from "./../Utils/web_logo1.png"
 // import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 const SkillsSection = () => {
   useEffect(() => {
     AOS.init({
-      duration: 2000,
-      once: false,
-      disable: "tablet",
+      offset: 1000,
+      duration: 200,
+      easing: 'ease-in',
+      delay: 200,
     });
   }, []);
 
@@ -20,8 +20,8 @@ const SkillsSection = () => {
     "
     >
     
-      <div className="w-[50%] max-md:w-[70%] mx-auto mt-[10rem]" id="skills">
-        <h1 className="text-[6.9rem] text-white text-center font-spaceGrotesk">
+      <div className="w-[50%] max-md:w-[70%] mx-auto mt-[10rem]" id="skills" >
+        <h1 className="text-[6.9rem] text-white text-center font-spaceGrotesk"  >
           Skills
         </h1>
         <p
@@ -36,7 +36,7 @@ const SkillsSection = () => {
         {skills.map((items, index) => {
           return (
             <div
-              data-aos={index % 2 === 0 ? "fade-left" : "fade-right"}
+              data-aos={index % 2 === 0 ? "zoom-in-left" : "zoom-in-right"}
               data-aos-offset="200"
               data-aos-easing="ease-in-sine"
               data-aos-duration="600"

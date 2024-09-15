@@ -1,17 +1,37 @@
-import img from "./../Utils/web_logo1.png"
-const LogoBox = ({ className, style,title }) => (
-  <div className={`home-experience_box-logo  ${className} flex justify-center`} style={style}>
-    <span className="text-[1.1rem] max-sm-phone:text-[0.8rem]  flex justify-center tex-center font-medium font-spaceGrotesk uppercase">{title}</span>
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { CiGlobe } from "react-icons/ci";
+import { useEffect } from "react";
+const LogoBox = ({ className, style, title }) => (
+  <div
+    data-aos="fade-right"
+    data-aos-anchor-placement="top-center"
+    className={`home-experience_box-logo   ${className} flex justify-center`}
+    style={style}
+  >
+    <span className="text-[1.1rem] max-sm-phone:text-[0.8rem]   flex justify-center tex-center font-medium font-spaceGrotesk uppercase">
+      {title}
+    </span>
   </div>
 );
 const AboutSection = () => {
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 600,
+      easing: "ease-in-sine",
+      delay: 100,
+      
+    });
+  }, []);
   return (
-    <section  className="px-[2.5rem] relative  ">
+    <section className="px-[2.5rem] relative  ">
       <div className="w-full max-w-[73.75rem] mx-[auto_!important]">
         <div className="text-white flex flex-col  justify-center items-center max-w-none mx-auto relative  text-[6.25rem] top-0 leading-1 font-semibold font-spaceGrotesk ">
-          <div  className="home-experience_text-wrapper  max-lg:w-[50rem]  max-md:w-[40rem] max-phone:w-[33rem] max-phone:py-[1rem] max-sm-phone:py-[3rem]">
+          <div className="home-experience_text-wrapper  max-lg:w-[50rem]  max-md:w-[40rem] max-phone:w-[33rem] max-phone:py-[1rem] max-sm-phone:py-[3rem]">
             <LogoBox
-              className="z-[5] bottom-[66%] left-[27%] inset-[auto_auto_10%_-9%] max-md:left-[10%]  max-md:bottom-[75%] max-sm-phone:left-[15%] max-sm-phone:bottom-[90%]"
+              data-aos="fade-left"
+              className="z-[5]  bottom-[66%] left-[27%] inset-[auto_auto_10%_-9%] max-md:left-[10%]  max-md:bottom-[75%] max-sm-phone:left-[15%] max-sm-phone:bottom-[90%]"
               style={{
                 willChange: "transform",
                 transform:
@@ -23,6 +43,7 @@ const AboutSection = () => {
             />
 
             <LogoBox
+              data-aos="fade-left"
               className="bottom-[26%] left-[12%] inset-[auto_auto_40%_-9%] max-md:bottom-[20%] max-min-tablet:left-[5%] max-sm-phone:bottom-[0%] max-sm-phone:left-[20%]"
               style={{
                 willChange: "transform",
@@ -35,6 +56,7 @@ const AboutSection = () => {
             />
 
             <LogoBox
+              data-aos="fade-left"
               className="inset-[33%_-9%_auto_auto] right-[10%] max-md:inset-[23%_-2%_auto_auto]  max-min-tab:right-[5%] max-min-tab:top-[20%]"
               style={{
                 willChange: "transform",
@@ -59,6 +81,7 @@ const AboutSection = () => {
             />
 
             <LogoBox
+              data-aos="fade-right"
               className="inset-[-12%_23%_auto_auto]"
               style={{
                 willChange: "transform",
@@ -79,11 +102,21 @@ const AboutSection = () => {
                 transformStyle: "preserve-3d",
               }}
             >
-              <div className="text-[5rem] max-min-tab:text-[4rem] max-sm-phone:text-[3rem] max-min-tab:leading-snug">Hi, I am</div>
-              <div className="text-[5rem] max-min-tab:text-[4rem] max-sm-phone:text-[3.2rem] max-min-tab:leading-snug ">Adnan Khan</div>
-              <div className="text-[4rem] max-md:hidden ">Software Developer</div>
-              <div className="text-[5rem] md:hidden max-min-tab:text-[4rem] max-sm-phone:text-[3rem] leading-tight">Software</div>
-              <div className="text-[5rem] md:hidden max-min-tab:text-[4rem] max-sm-phone:text-[3rem]   leading-tight">Developer</div>
+              <div className="text-[5rem] max-min-tab:text-[4rem] max-sm-phone:text-[3rem] max-min-tab:leading-snug">
+                Hi, I am
+              </div>
+              <div className="text-[5rem] max-min-tab:text-[4rem] max-sm-phone:text-[3.2rem] max-min-tab:leading-snug ">
+                Adnan Khan
+              </div>
+              <div className="text-[4rem] max-md:hidden ">
+                Software Developer
+              </div>
+              <div className="text-[5rem] md:hidden max-min-tab:text-[4rem] max-sm-phone:text-[3rem] leading-tight">
+                Software
+              </div>
+              <div className="text-[5rem] md:hidden max-min-tab:text-[4rem] max-sm-phone:text-[3rem]   leading-tight">
+                Developer
+              </div>
             </div>
           </div>
           <div className="z-[2] flex justify-center items-center relative">
@@ -95,19 +128,27 @@ const AboutSection = () => {
                 transformStyle: "preserve-3d",
                 willChange: "transform;",
               }}
+            ></div>
+            <div
+              className="absolute opacity-[0.3] border-dashed border-[1px] border-white w-[20rem] h-[20rem] max-min-tab:w-[18rem] 
+            max-min-tab:h-[18rem] max-sm-phone:w-[15rem] max-sm-phone:h-[15rem]   rounded-[50%]"
+            ></div>
+            <div
+              className="absolute opacity-[0.3] border-dashed border-[1px] border-white w-[32rem]   h-[32rem] max-min-tab:w-[30rem] 
+            max-min-tab:h-[30rem] max-phone:w-[25rem] max-phone:h-[25rem] max-sm-phone:w-[22rem] max-sm-phone:h-[22rem] rounded-[50%]"
+            ></div>
+            <div
+              className="absolute   border-white w-[32rem]  animate-[spin_15s_linear_infinite] h-[32rem] max-min-tab:w-[30rem] 
+            max-min-tab:h-[30rem] max-phone:w-[25rem] max-phone:h-[25rem] max-sm-phone:w-[22rem] max-sm-phone:h-[22rem] rounded-[50%]"
             >
-              <div className="">
+              <div className=" flex justify-center items-center animate-[spin_20s_linear_infinite]  font-bold text-black text-[1.8rem] w-[40px] absolute right-[20rem]  max-phone:right-[16rem] max-sm-phone:right-[15rem] rounded-[50%] h-[40px] bg-[#13dee6]">
+                <CiGlobe />
               </div>
             </div>
-            <div className="absolute opacity-[0.3] border-dashed border-[1px] border-white w-[20rem] h-[20rem] max-min-tab:w-[18rem] 
-            max-min-tab:h-[18rem] max-sm-phone:w-[15rem] max-sm-phone:h-[15rem]  rounded-[50%]"></div>
-            <div className="absolute opacity-[0.3] border-dashed border-[1px] border-white w-[32rem] h-[32rem] max-min-tab:w-[30rem] 
-            max-min-tab:h-[30rem] max-phone:w-[25rem] max-phone:h-[25rem] max-sm-phone:w-[22rem] max-sm-phone:h-[22rem] rounded-[50%]"></div>
             <div className="z-[5] bg-[#2cf8ff] blur-[100px] rounded-[50%] w-[25rem] h-[7.5rem]  absolute"></div>
           </div>
         </div>
       </div>
-     
     </section>
   );
 };

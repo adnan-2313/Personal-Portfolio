@@ -5,8 +5,10 @@ import "aos/dist/aos.css";
 const ProjectSection = () => {
   useEffect(() => {
     AOS.init({
-      duration: 3000,
-      once: false, 
+      offset: 200,
+      duration: 1000,
+      easing: "ease-in-out",
+      delay: 300,
     });
   }, []);
   return (
@@ -24,7 +26,7 @@ const ProjectSection = () => {
         {projects.map((project, index) => {
           return (
             <div
-              data-aos={index % 2 === 0 ? "fade-up-right" : "fade-up-left"}
+              data-aos={index % 2 === 0 ? "flip-right" : "flip-right"}
               key={project.id}
               className="bg-[#121212] group  flex flex-col  w-[24.7rem] gap-2 p-[1rem] rounded-[.75rem] transition-all 
               duration-[0.5s] hover:duration-[0.5s] shadow-xl hover:bg-[#050505] hover:transition-all hover:translate-y-[-10px] "

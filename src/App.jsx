@@ -7,7 +7,8 @@ import ProjectSection from "./Components/ProjectSection";
 import EducationSection from "./Components/EducationSection";
 import FooterSection from "./Components/FooterSection";
 import { useEffect, useState } from "react";
-import img from "./Utils/web_logo1.png"
+import img from "./Utils/web logo.png";
+import logo from "./Utils/A_logo-transformed.png"
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -33,16 +34,17 @@ const App = () => {
         <HeroSection />
         <Navbar />
         <AboutSection />
-        <div className="absolute border-[1px] backdrop-filter-[40px] overflow-hidden bg-[#000000c0] border-gray-700 p-[15px]   right-[38rem] z-[1000] font-montserrat text-white top-[90rem] text-xl rounded-[50%] ">
-        <img
-          src={img}
-          alt=""
-          loading="lazy"
-          className="h-[8.125rem] w-[#8.125rem]  top-0 animate-[spin_7s_linear_infinite]"
-        />
-        {/* <span className="absolute left-[3rem] text-[0.8rem] top-[4rem]">HIRE ME</span> */}
-        <div className="bg-[#2cf8ff] blur-[40px] top-[2rem] left-[2rem] opacity-50 absolute rounded-[50%] w-[5.25rem] h-[5.25rem] z-1 "></div>
-      </div>
+        <div className="absolute border-[1px] backdrop-filter-[40px] overflow-hidden bg-[#000000c0] border-gray-700 p-[10px]   right-[38rem] z-[1000] font-montserrat text-white top-[90rem] text-xl rounded-[50%] ">
+          <img
+            src={img}
+            alt=""
+            loading="lazy"
+            className="h-[8.125rem] w-[8.125rem]  top-0 animate-[spin_10s_linear_infinite]"
+          />
+          <img src={logo} className="absolute h-[2.3rem] w-[2.3rem]  top-[3.2rem] left-14 "/>
+          {/* <span className="absolute left-[3rem] text-[0.8rem] top-[4rem]">HIRE ME</span> */}
+          <div className="bg-[#2cf8ff] blur-[40px] top-[2rem] left-[2rem] opacity-50 absolute rounded-[50%] w-[5.25rem] h-[5.25rem] z-1 "></div>
+        </div>
         <SkillsSection />
         <ProjectSection />
         <EducationSection />
