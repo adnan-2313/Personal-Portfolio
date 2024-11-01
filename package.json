@@ -19,6 +19,7 @@
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@mui/lab": "^6.0.0-beta.9",
     "@mui/material": "^6.0.2",
+    "@tsparticles/react": "^3.0.0",
     "aos": "^2.3.4",
     "framer-motion": "^11.5.4",
     "react": "^18.3.1",
@@ -26,10 +27,12 @@
     "react-fast-marquee": "^1.6.5",
     "react-icons": "^5.2.1",
     "react-intersection-observer": "^9.13.1",
+    "react-particles": "^2.12.2",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.26.0",
     "react-slick": "^0.30.2",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "tsparticles-slim": "^2.12.0"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",

@@ -34,7 +34,8 @@ const App = () => {
         <HeroSection />
         <Navbar />
         <AboutSection />
-        <div className="absolute border-[1px] backdrop-filter-[40px] overflow-hidden bg-[#000000c0] border-gray-700 p-[10px]   right-[38rem] z-[1000] font-montserrat text-white top-[90rem] text-xl rounded-[50%] ">
+        <div className="absolute border-[1px] backdrop-filter-[40px] overflow-hidden bg-[#000000c0] border-gray-700 p-[10px]
+           right-[38rem] z-[1000] font-montserrat text-white top-[90rem] text-xl rounded-[50%] ">
           <img
             src={img}
             alt=""

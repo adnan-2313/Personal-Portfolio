@@ -20,7 +20,7 @@ const SkillsSection = () => {
     "
     >
     
-      <div className="w-[50%] max-md:w-[70%] mx-auto mt-[10rem]" id="skills" >
+      <div className="w-[50%] max-md:w-[100%]  mx-auto mt-[10rem]" id="skills" >
         <h1 className="text-[6.9rem] text-white text-center font-spaceGrotesk"  >
           Skills
         </h1>
@@ -41,7 +41,7 @@ const SkillsSection = () => {
               data-aos-easing="ease-in-sine"
               data-aos-duration="600"
               className="wrapper z-[4] bg-[rgba(89,91,115,0.1)] rounded-[1.25rem] border-[1px] border-[rgba(89,91,115,0.5)]  
-              backdrop-blur-[40px] text-white w-[25rem] "
+              backdrop-blur-[40px] text-white w-[25rem] max-"
               key={index}
             >
               <div className=" flex flex-col justify-center  p-[40px_30px]  ">
