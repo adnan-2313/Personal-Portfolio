@@ -20,6 +20,7 @@ export default function FooterSection() {
             return (
               <a
                 key={item.id}
+                target="_blank"
                 href={item.link}
                 className="w-[30%]  cursor-pointer  hover:bg-[#1df7ff1a] hover:transition-all transition-all border-r-[1px] border-[#fff3] py-[1.5rem] max-md:py-[1rem] relative flex justify-center items-center "
               >

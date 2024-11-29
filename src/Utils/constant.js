@@ -214,8 +214,8 @@ export const projects = [
 export const socialMedia = [
   {
     id: 0,
-    title: "HOME",
-    link: "/",
+    title: "LEET CODE",
+    link: "https://leetcode.com/u/code_adnan54/",
     icon: "",
   },
   {
@@ -233,7 +233,7 @@ export const socialMedia = [
   {
     id: 3,
     title: "EMAIL ME",
-    link: "https://www.linkedin.com/in/adnankhan123/",
+    link: "mailto:ak567845@gmail.com",
     icon: "",
   },
 ];
