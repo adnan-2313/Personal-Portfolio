@@ -9,9 +9,25 @@ import FooterSection from "./Components/FooterSection";
 import { useEffect, useState } from "react";
 import img from "./Utils/web logo.png";
 import logo from "./Utils/A_logo-transformed.png";
+import { ClipLoader } from "react-spinners";
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    // Simulate a 0.1-second delay
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 500); // 0.1 seconds
 
+    return () => clearTimeout(timer); // Cleanup the timeout
+  }, []);
+
+  if (isLoading) {
+    return (
+      <div className="h-screen flex flex-col text-white justify-center items-center bg-black">
+        <ClipLoader color="#2cf8ff" size={80} />
+      </div>
+    );
+  }
   return (
     <>
       <div className="relative overflow-hidden bg-custom-hsla antialiased z-[10] flex flex-col justify-center items-center mb-[100vh]">
@@ -25,25 +41,9 @@ const App = () => {
         ></div>
         <Header />
         <HeroSection />
-        <Navbar />
+        {/* <Navbar /> */}
         <AboutSection />
-        <div
-          className="absolute border-[1px] backdrop-filter-[40px] overflow-hidden bg-[#000000c0] border-gray-700 p-[10px]
-           right-[38rem] z-[1000] font-montserrat text-white top-[90rem] text-xl rounded-[50%] "
-        >
-          <img
-            src={img}
-            alt=""
-            loading="lazy"
-            className="h-[8.125rem] w-[8.125rem]  top-0 animate-[spin_10s_linear_infinite]"
-          />
-          <img
-            src={logo}
-            className="absolute h-[2.3rem] w-[2.3rem]  top-[3.2rem] left-14 "
-          />
-          {/* <span className="absolute left-[3rem] text-[0.8rem] top-[4rem]">HIRE ME</span> */}
-          <div className="bg-[#2cf8ff] blur-[40px] top-[2rem] left-[2rem] opacity-50 absolute rounded-[50%] w-[5.25rem] h-[5.25rem] z-1 "></div>
-        </div>
+
         <SkillsSection />
         <ProjectSection />
         <EducationSection />

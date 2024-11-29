@@ -164,9 +164,21 @@ export const education = [
 
 export const projects = [
   {
+    id: 1,
+    title: "Movies Pilot",
+    date: "Oct 2024",
+    description:
+      "Developed a front end web application that allows users to access news of every category, read articles , intergated API from newsapi.org.",
+    image: "https://i.imgur.com/kSoUdvI.png",
+    tags: ["React Js", "Redux Toolkit", "Javascript", "Tailwind CSS"],
+    category: "web app",
+    github: "#",
+    webapp: "#",
+  },
+  {
     id: 0,
     title: "Student Connection System",
-    date: "Feb 2024 - Current ",
+    date: "APR 2024",
     description:
       "Student Connection System is a web application designed to connect students of LPU with other students, faculty and alumini. It provides a user-friendly interface for students to search students, faculty and alumini , project on there projects , domain and major and other things",
     image: "https://i.imgur.com/OMd32l5.jpeg",
@@ -186,79 +198,42 @@ export const projects = [
     webapp: "#",
   },
   {
-    id: 1,
+    id: 2,
     title: "NewsKeeda APP",
-    date: "Nov 2023 - Dec 2023",
+    date: "Dec 2023",
     description:
       "Developed a front end web application that allows users to access news of every category, read articles , intergated API from newsapi.org.",
-    image: "https://i.imgur.com/gUAQ3kd.jpeg",
+    image: "https://imgur.com/OMd32l5",
     tags: ["React Js", "Javascript", "Bootstrap"],
     category: "web app",
     github: "#",
     webapp: "#",
   },
-  {
-    id: 2,
-    title: "Movie Recommendation System",
-    date: "Sep 2023 - Oct 2023",
-    description:
-      "A content based movie recommender system using cosine similarity, uses tmdb dataset.",
-    image:
-      "https://cdn-images-1.medium.com/v2/resize:fit:1500/1*leuI7fVkeOrKAIGOOj_T9A.png",
-    tags: ["Python", "recomender system", "cosine similarity"],
-    category: "machine learning",
-    github: "#",
-    webapp: "#",
-  },
-  {
-    id: 3,
-    title: "Todo Web App",
-    date: "Jun 2021",
-    description:
-      " A Todo Web App made with React JS, and Material UI.User can add there todos",
-    image: "https://i.imgur.com/sYqOxpZ.jpeg",
-    tags: ["React Js", "Local Storage", "Material UI"],
-    category: "web app",
-    github: "#",
-    webapp: "#",
-  },
-  {
-    id: 3,
-    title: "Todo Web App",
-    date: "Jun 2021",
-    description:
-      " A Todo Web App made with React JS, and Material UI.User can add there todos",
-    image: "https://i.imgur.com/x1TDfbl.jpeg",
-    tags: ["React Js", "Local Storage", "Material UI"],
-    category: "web app",
-    github: "#",
-    webapp: "#",
-  },
 ];
-import { IoHomeOutline } from "react-icons/io5";
+
 export const socialMedia = [
   {
-    id:0,
-    title:"HOME",
-    link:"/",
-    icon:""
+    id: 0,
+    title: "HOME",
+    link: "/",
+    icon: "",
   },
   {
-    id:1,
-    title:"GITHUB",
-    link:"https://github.com/adnan-2313",
-    icon:""
+    id: 1,
+    title: "GITHUB",
+    link: "https://github.com/adnan-2313",
+    icon: "",
   },
   {
-    id:2,
-    title:"LINKEDIN",
-    link:"https://www.linkedin.com/in/adnankhan123/",
-    icon:""
+    id: 2,
+    title: "LINKEDIN",
+    link: "https://www.linkedin.com/in/adnankhan123/",
+    icon: "",
   },
   {
-    id:3,
-    title:"EMAIL ME",
-    link:"https://www.linkedin.com/in/adnankhan123/",
-    icon:""
+    id: 3,
+    title: "EMAIL ME",
+    link: "https://www.linkedin.com/in/adnankhan123/",
+    icon: "",
   },
-]
+];
