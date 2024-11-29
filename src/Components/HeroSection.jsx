@@ -3,25 +3,13 @@ import { FaWhatsapp } from "react-icons/fa";
 import MyImage from "../Utils/MyProfileImage.jpg";
 import img from "./../Utils/web logo.png";
 import logo from "./../Utils/A_logo-transformed.png";
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
-const HeroSection = () => {
-  useEffect(() => {
-    AOS.init({
-      offset: 800,
-      duration: 600,
-      easing: "ease-in-sine",
-      delay: 100,
-    });
-  }, []);
 
+const HeroSection = () => {
   return (
     <main className="flex flex-row relative  pt-0  text-white max-lg:flex-col  w-full justify-between mb-[1rem] max-w-[75rem]  ">
       <div className="w-[100%] p-0  ">
         <div className="flex p-[0]  max-lg:justify-start     z-[100]     ">
           <img
-            data-aos="fade-right"
             src={MyImage}
             loading="lazy"
             className="z-[-20] top-[-5rem]   h-[35rem]  w-[35rem] max-min-tab:h-[30rem] max-min-tab:w-[25rem] max-phone:h-[25rem] max-phone:w-[25rem] "
@@ -50,16 +38,10 @@ const HeroSection = () => {
         </div>
       </div>
       <div className="w-[100%] mt-[4rem]  font-montserrat  flex flex-col max-lg:ml-[2rem] max-sm:mr-[2rem] ">
-        <h1
-          data-aos="fade-down"
-          className="bg-gradient-to-tr from-[#2cf8ff]  to-[#18ffb0] bg-clip-text text-transparent text-[.875rem] "
-        >
+        <h1 className="bg-gradient-to-tr from-[#2cf8ff]  to-[#18ffb0] bg-clip-text text-transparent text-[.875rem] ">
           FRONT END DEVELOPER & PROGRAMMER
         </h1>
-        <p
-          data-aos="fade-left"
-          className="font-spaceGrotesk text-[3.8rem] max-lg:text-[3rem] max-sm:text-[2.25rem] max-sm-phone:text-[2.15rem] max-sm:leading-tight w-[100%]  p-[20px_21px_0px_0px]   border-white font-semibold leading-[3.8rem]"
-        >
+        <p className="font-spaceGrotesk text-[3.8rem] max-lg:text-[3rem] max-sm:text-[2.25rem] max-sm-phone:text-[2.15rem] max-sm:leading-tight w-[100%]  p-[20px_21px_0px_0px]   border-white font-semibold leading-[3.8rem]">
           Ambitious Front End Developer Ready to Bring Ideas to Life
         </p>
         <p className="text-gray-300 text-[1.1rem] font-medium mt-[20px] w-[75%] max-md:w-[90%] max-phone:w-[87%] max-phone:text-[1rem] leading-[1.4rem]">

@@ -1,11 +1,7 @@
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { CiGlobe } from "react-icons/ci";
-import { useEffect } from "react";
+
 const LogoBox = ({ className, style, title }) => (
   <div
-    data-aos="fade-right"
-    data-aos-anchor-placement="top-center"
     className={`home-experience_box-logo   ${className} flex justify-center`}
     style={style}
   >
@@ -14,23 +10,14 @@ const LogoBox = ({ className, style, title }) => (
     </span>
   </div>
 );
+
 const AboutSection = () => {
-  useEffect(() => {
-    AOS.init({
-      offset: 200,
-      duration: 600,
-      easing: "ease-in-sine",
-      delay: 0,
-      
-    });
-  }, []);
   return (
     <section className="px-[2.5rem] relative  ">
       <div className="w-full max-w-[73.75rem] mx-[auto_!important]">
         <div className="text-white flex flex-col  justify-center items-center max-w-none mx-auto relative  text-[6.25rem] top-0 leading-1 font-semibold font-spaceGrotesk ">
           <div className="home-experience_text-wrapper  max-lg:w-[50rem]  max-md:w-[40rem] max-phone:w-[33rem] max-phone:py-[1rem] max-sm-phone:py-[3rem]">
             <LogoBox
-              data-aos="fade-left"
               className="z-[5]  bottom-[66%] left-[27%] inset-[auto_auto_10%_-9%] max-md:left-[10%]  max-md:bottom-[75%] max-sm-phone:left-[15%] max-sm-phone:bottom-[90%]"
               style={{
                 willChange: "transform",
@@ -43,7 +30,6 @@ const AboutSection = () => {
             />
 
             <LogoBox
-              data-aos="fade-left"
               className="bottom-[26%] left-[12%] inset-[auto_auto_40%_-9%] max-md:bottom-[20%] max-min-tablet:left-[5%] max-sm-phone:bottom-[0%] max-sm-phone:left-[20%]"
               style={{
                 willChange: "transform",
@@ -56,7 +42,6 @@ const AboutSection = () => {
             />
 
             <LogoBox
-              data-aos="fade-left"
               className="inset-[33%_-9%_auto_auto] right-[10%] max-md:inset-[23%_-2%_auto_auto]  max-min-tab:right-[5%] max-min-tab:top-[20%]"
               style={{
                 willChange: "transform",
@@ -81,7 +66,6 @@ const AboutSection = () => {
             />
 
             <LogoBox
-              data-aos="fade-right"
               className="inset-[-12%_23%_auto_auto]"
               style={{
                 willChange: "transform",

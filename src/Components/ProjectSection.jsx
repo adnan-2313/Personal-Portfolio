@@ -1,16 +1,6 @@
 import { projects } from "../Utils/constant";
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+
 const ProjectSection = () => {
-  useEffect(() => {
-    AOS.init({
-      offset: 200,
-      duration: 1000,
-      easing: "ease-in-out",
-      delay: 300,
-    });
-  }, []);
   return (
     <section
       id="projects"
@@ -23,10 +13,9 @@ const ProjectSection = () => {
         </h1>
       </div>
       <div className="flex flex-wrap gap-4 max-xl:justify-center ">
-        {projects.map((project, index) => {
+        {projects.map((project) => {
           return (
             <div
-              data-aos={index % 2 === 0 ? "flip-right" : "flip-right"}
               key={project.id}
               className="bg-[#121212] group  flex flex-col  w-[24.7rem] gap-2 p-[1rem] rounded-[.75rem] transition-all 
               duration-[0.5s] hover:duration-[0.5s] shadow-xl hover:bg-[#050505] hover:transition-all hover:translate-y-[-10px] "
