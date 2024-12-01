@@ -36,7 +36,7 @@ export default function FooterSection() {
             );
           })}
         </div>
-        <div className="fixed max-sm:mt-2 max-sm:mx-auto bottom-0 w-full lg:pr-[80px] flex flex-row max-sm:flex-col max-sm:justify-center max-sm:items-center justify-between ">
+        <div className="fixed  bottom-0 w-full lg:pr-[80px] flex flex-row max-sm:flex-col max-sm:justify-center max-sm:items-center justify-between ">
           <span className="font-playwrite  text-[1.2rem] max-sm:text-[1rem] font-medium">
             Adnankhan
           </span>

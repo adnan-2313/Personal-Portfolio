@@ -164,11 +164,23 @@ export const education = [
 
 export const projects = [
   {
+    id: 0,
+    title: "Talent Hive",
+    date: "Nov 2024",
+    description:
+      " Full-Stack Job Portal built using React JS, Tailwind CSS, Supabase, Clerk for authentication, and Shadcn UI, showcasing seamless job search and user management functionality.",
+    image: "https://i.imgur.com/qJBIsRg.jpg",
+    tags: ["React JS", "Tailwind CSS", "Supabase", "Clerk", "Shadcn UI"],
+    category: "web app",
+    github: "#",
+    webapp: "#",
+  },
+  {
     id: 1,
     title: "Movies Pilot",
     date: "Oct 2024",
     description:
-      "Developed a front end web application that allows users to access news of every category, read articles , intergated API from newsapi.org.",
+      "A React-based movie discovery app that provides personalized recommendations, movie details, and trailers. Built with Firebase, TMDB, OpenAI GPT, and styled with TailwindCSS.",
     image: "https://i.imgur.com/kSoUdvI.png",
     tags: ["React Js", "Redux Toolkit", "Javascript", "Tailwind CSS"],
     category: "web app",
@@ -176,7 +188,7 @@ export const projects = [
     webapp: "#",
   },
   {
-    id: 0,
+    id: 2,
     title: "Student Connection System",
     date: "APR 2024",
     description:
@@ -197,8 +209,9 @@ export const projects = [
     github: "#",
     webapp: "#",
   },
+
   {
-    id: 2,
+    id: 3,
     title: "NewsKeeda APP",
     date: "Dec 2023",
     description:
