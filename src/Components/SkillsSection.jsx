@@ -1,6 +1,4 @@
 import { skills } from "../Utils/constant";
-import img from "../Utils/web logo.png";
-import logo from "../Utils/A_logo-transformed.png";
 const SkillsSection = () => {
   return (
     <>
@@ -46,7 +44,6 @@ const SkillsSection = () => {
                         >
                           <img
                             src={skill.image}
-                            loading="lazy"
                             alt={skill.name}
                             className="size-8 max-sm-phone:size-6"
                           ></img>

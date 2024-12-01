@@ -14,7 +14,6 @@ const HeroSection = () => {
         <div className="flex p-[0]  max-lg:justify-start     z-[100]     ">
           <img
             src={MyImage}
-            loading="lazy"
             className="z-[-20] top-[-5rem]   h-[35rem]  w-[35rem] max-min-tab:h-[30rem] max-min-tab:w-[25rem] max-phone:h-[25rem] max-phone:w-[25rem] "
             alt=""
           />
@@ -27,12 +26,9 @@ const HeroSection = () => {
         >
           <img
             src={img}
-            alt=""
-            loading="lazy"
             className="w-[7.125rem] max-phone:w-[5.125rem]  top-0 animate-[spin_10s_linear_infinite]"
           />
           <img
-            loading="lazy"
             src={logo}
             className="absolute  w-[2.2rem] max-phone:w-[1.8rem] max-phone:top-[2.2rem]  max-phone:left-[2.4rem]  top-[2.9rem] left-[3rem] "
           />

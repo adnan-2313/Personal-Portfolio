@@ -52,7 +52,6 @@ html {
   }
 }
 
-.active {
+.active, .nav:hover {
   color: #14e9b3; /* Highlighted color */
-  font-weight: bold;
 }

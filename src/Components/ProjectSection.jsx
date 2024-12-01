@@ -23,7 +23,6 @@ const ProjectSection = () => {
               <div className="overflow-hidden">
                 <img
                   src={project.image}
-                  loading="lazy"
                   alt={project.title}
                   className="rounded-[.5rem] border-[1px] border-[#1b1b1b]  aspect-[16/9]  max-w-full inline-block w-full h-auto"
                 />
