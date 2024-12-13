@@ -189,6 +189,18 @@ export const projects = [
   },
   {
     id: 2,
+    title: "Destina: AI Trip Planner",
+    date: "APR 2024",
+    description:
+      "Student Connection System is a web application designed to connect students of LPU with other students, faculty and alumini. It provides a user-friendly interface for students to search students, faculty and alumini , project on there projects , domain and major and other things",
+    image: "https://i.imgur.com/4gz0EK9.jpg",
+    tags: ["React Js", "Tailwind CSS", "Firebase", "OPEN AI API"],
+    category: "web app",
+    github: "#",
+    webapp: "#",
+  },
+  {
+    id: 3,
     title: "Student Connection System",
     date: "APR 2024",
     description:
@@ -211,7 +223,7 @@ export const projects = [
   },
 
   {
-    id: 3,
+    id: 4,
     title: "NewsKeeda APP",
     date: "Dec 2023",
     description:
