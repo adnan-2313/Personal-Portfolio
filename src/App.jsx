@@ -1,24 +1,20 @@
 import Header from "./Components/HeaderSection";
 import HeroSection from "./Components/HeroSection";
 import AboutSection from "./Components/AboutSection";
-import Navbar from "./Components/NavbarSection";
 import SkillsSection from "./Components/SkillsSection";
 import ProjectSection from "./Components/ProjectSection";
 import EducationSection from "./Components/EducationSection";
 import FooterSection from "./Components/FooterSection";
 import { useEffect, useState } from "react";
-import img from "./Utils/web logo.png";
-import logo from "./Utils/A_logo-transformed.png";
 import { ClipLoader } from "react-spinners";
+
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
-  useEffect(() => {
-    // Simulate a 0.1-second delay
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 500); // 0.1 seconds
 
-    return () => clearTimeout(timer); // Cleanup the timeout
+  useEffect(() => {
+    const img = new Image();
+    img.src = "https://i.imgur.com/GxrzCwZ.jpg";
+    img.onload = () => setIsLoading(false);
   }, []);
 
   if (isLoading) {
@@ -41,7 +37,7 @@ const App = () => {
         ></div>
         <Header />
         <HeroSection />
-        {/* <Navbar /> */}
+
         <AboutSection />
 
         <SkillsSection />

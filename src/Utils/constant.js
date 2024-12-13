@@ -88,8 +88,7 @@ export const skills = [
     skills: [
       {
         name: "Git",
-        image:
-          "https://book.git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
+        image: "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
       },
       {
         name: "GitHub",
@@ -175,26 +174,27 @@ export const projects = [
     github: "#",
     webapp: "#",
   },
+
   {
     id: 1,
-    title: "Movies Pilot",
-    date: "Oct 2024",
+    title: "Destina: AI Trip Planner",
+    date: "APR 2024",
     description:
-      "A React-based movie discovery app that provides personalized recommendations, movie details, and trailers. Built with Firebase, TMDB, OpenAI GPT, and styled with TailwindCSS.",
-    image: "https://i.imgur.com/kSoUdvI.png",
-    tags: ["React Js", "Redux Toolkit", "Javascript", "Tailwind CSS"],
+      "Destina is an AI-powered trip planning platform enhanced with OpenAI's capabilities, making travel planning smarter and more conversational. The integration of OpenAI enables natural language interactions, personalized suggestions, and real-time assistance, delivering an intuitive and engaging experience for users. Destina combines cutting-edge AI with intelligent trip planning to craft memorable journeys effortlessly.",
+    image: "https://i.imgur.com/4gz0EK9.jpg",
+    tags: ["React Js", "Tailwind CSS", "Firebase", "OPEN AI Model"],
     category: "web app",
     github: "#",
     webapp: "#",
   },
   {
     id: 2,
-    title: "Destina: AI Trip Planner",
-    date: "APR 2024",
+    title: "Movies Pilot",
+    date: "Oct 2024",
     description:
-      "Student Connection System is a web application designed to connect students of LPU with other students, faculty and alumini. It provides a user-friendly interface for students to search students, faculty and alumini , project on there projects , domain and major and other things",
-    image: "https://i.imgur.com/4gz0EK9.jpg",
-    tags: ["React Js", "Tailwind CSS", "Firebase", "OPEN AI API"],
+      "A React-based movie discovery app that provides personalized recommendations, movie details, and trailers. Built with Firebase, TMDB, OpenAI GPT, and styled with TailwindCSS.",
+    image: "https://i.imgur.com/kSoUdvI.png",
+    tags: ["React Js", "Redux Toolkit", "Javascript", "Tailwind CSS"],
     category: "web app",
     github: "#",
     webapp: "#",

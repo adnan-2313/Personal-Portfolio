@@ -1,8 +1,7 @@
 // import HeroImage from "../Utils/HeroImage.png";
 import { FaWhatsapp } from "react-icons/fa";
-import MyImage from "../Utils/MyProfileImage.jpg";
-import img from "./../Utils/web logo.png";
-import logo from "./../Utils/A_logo-transformed.png";
+import img from "../../public/web logo.png";
+import logo from "../../public/A_logo-transformed.png";
 
 const HeroSection = () => {
   return (
@@ -13,7 +12,7 @@ const HeroSection = () => {
       <div className="w-[100%] p-0  ">
         <div className="flex p-[0]  max-lg:justify-start     z-[100]     ">
           <img
-            src={MyImage}
+            src="https://i.imgur.com/GxrzCwZ.jpg"
             className="z-[-20] top-[-5rem]   h-[35rem]  w-[35rem] max-min-tab:h-[30rem] max-min-tab:w-[25rem] max-phone:h-[25rem] max-phone:w-[25rem] "
             alt=""
           />
