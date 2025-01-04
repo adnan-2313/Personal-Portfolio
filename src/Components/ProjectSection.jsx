@@ -1,3 +1,4 @@
+import { GithubIcon, Link } from "lucide-react";
 import { projects } from "../Utils/constant";
 
 const ProjectSection = () => {
@@ -43,12 +44,28 @@ const ProjectSection = () => {
                     );
                   })}
                 </div>
-                <h2 className="text-white text-[1.4rem]  w-[100%]">
-                  {project.title}
-                </h2>
-                <h3 className="text-[.9rem] text-[rgba(177,178,179,0.5)] leading-3">
-                  {project.date}
-                </h3>
+                <div className="flex justify-between">
+                  <div className="">
+                    <h2 className="text-white text-[1.4rem]  w-[100%]">
+                      {project.title}
+                    </h2>
+                    <h3 className="text-[.9rem] text-[rgba(177,178,179,0.5)] leading-3">
+                      {project.date}
+                    </h3>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <button className=" bg-[#4e4b4b]  p-[4px_6px] rounded-lg text-gray-400 m-[4px_3px]">
+                      <a target="_link" href={project.webapp}>
+                        <Link />
+                      </a>
+                    </button>
+                    <button className=" bg-[#4e4b4b]  p-[4px_6px] rounded-lg text-gray-400 m-[4px_3px]">
+                      <a target="_github" href={project.github}>
+                        <GithubIcon />
+                      </a>
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           );

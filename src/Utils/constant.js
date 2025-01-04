@@ -168,11 +168,11 @@ export const projects = [
     date: "Dec 2024",
     description:
       " Full-Stack Job Portal built using React JS, Tailwind CSS, Supabase, Clerk for authentication, and Shadcn UI, showcasing seamless job search and user management functionality.",
-    image: "https://i.imgur.com/qJBIsRg.jpg",
+    image: "https://i.imgur.com/rzZzKVM.jpg",
     tags: ["React JS", "Tailwind CSS", "Supabase", "Clerk", "Shadcn UI"],
     category: "web app",
-    github: "#",
-    webapp: "#",
+    github: "https://github.com/adnan-2313/heaven-yard",
+    webapp: "https://heaven-yard.vercel.app/",
   },
   {
     id: 1,
@@ -183,8 +183,8 @@ export const projects = [
     image: "https://i.imgur.com/qJBIsRg.jpg",
     tags: ["React JS", "Tailwind CSS", "Supabase", "Clerk", "Shadcn UI"],
     category: "web app",
-    github: "#",
-    webapp: "#",
+    github: "https://github.com/adnan-2313/talent-Hive",
+    webapp: "https://talenthive-jobportal.vercel.app/",
   },
 
   {
