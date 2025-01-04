@@ -9,7 +9,7 @@ export default function FooterSection() {
       <div className="w-full h-[3rem] z-[50] bg-[#41ffd6] blur-[120px]    opacity-[1] inset-[50%_0%_0%_50%]"></div>
       <Marquee speed={190}>
         <div className="w-full overflow-y-hidden">
-          <h1 className="text-[18.75rem] mt-8 w-full whitespace-nowrap max-lg:text-[15rem] max-md:text-[12rem] leading-[.8] flex-[1] block font-spaceGrotesk font-semibold">
+          <h1 className="md:text-[18.75rem] mt-8 w-full whitespace-nowrap  text-[12rem] leading-[.8] flex-[1] block font-spaceGrotesk font-semibold">
             LET'S TALK -{" "}
           </h1>
         </div>
@@ -36,7 +36,7 @@ export default function FooterSection() {
             );
           })}
         </div>
-        <div className="fixed  bottom-0 w-full lg:pr-[80px] flex flex-row max-sm:flex-col max-sm:justify-center max-sm:items-center justify-between ">
+        <div className="absolute bottom-0 mx-auto  w-full lg:pr-[80px] flex sm:flex-row flex-col  justify-center items-center sm:justify-between ">
           <span className="font-playwrite  text-[1.2rem] max-sm:text-[1rem] font-medium">
             Adnankhan
           </span>

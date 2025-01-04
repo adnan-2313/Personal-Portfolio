@@ -164,6 +164,18 @@ export const education = [
 export const projects = [
   {
     id: 0,
+    title: "Heaven Yard",
+    date: "Dec 2024",
+    description:
+      " Full-Stack Job Portal built using React JS, Tailwind CSS, Supabase, Clerk for authentication, and Shadcn UI, showcasing seamless job search and user management functionality.",
+    image: "https://i.imgur.com/qJBIsRg.jpg",
+    tags: ["React JS", "Tailwind CSS", "Supabase", "Clerk", "Shadcn UI"],
+    category: "web app",
+    github: "#",
+    webapp: "#",
+  },
+  {
+    id: 1,
     title: "Talent Hive",
     date: "Nov 2024",
     description:
@@ -176,7 +188,7 @@ export const projects = [
   },
 
   {
-    id: 1,
+    id: 2,
     title: "Destina: AI Trip Planner",
     date: "APR 2024",
     description:
@@ -188,7 +200,7 @@ export const projects = [
     webapp: "#",
   },
   {
-    id: 2,
+    id: 3,
     title: "Movies Pilot",
     date: "Oct 2024",
     description:
@@ -200,7 +212,7 @@ export const projects = [
     webapp: "#",
   },
   {
-    id: 3,
+    id: 4,
     title: "Student Connection System",
     date: "APR 2024",
     description:
@@ -223,7 +235,7 @@ export const projects = [
   },
 
   {
-    id: 4,
+    id: 5,
     title: "NewsKeeda APP",
     date: "Dec 2023",
     description:

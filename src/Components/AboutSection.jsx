@@ -115,11 +115,11 @@ const AboutSection = () => {
               }}
             ></div>
             <div
-              className="absolute opacity-[0.3] border-dashed border-[1px] border-white w-[20rem] h-[20rem] max-min-tab:w-[18rem] 
+              className="absolute opacity-[0.3] border-dashed border-[2px] border-white w-[20rem] h-[20rem] max-min-tab:w-[18rem] 
             max-min-tab:h-[18rem] max-sm-phone:w-[15rem] max-sm-phone:h-[15rem]   rounded-[50%]"
             ></div>
             <div
-              className="absolute opacity-[0.3] border-dashed border-[1px] border-white w-[32rem]   h-[32rem] max-min-tab:w-[30rem] 
+              className="absolute opacity-[0.3] border-dashed border-[2px] border-white w-[32rem]   h-[32rem] max-min-tab:w-[30rem] 
             max-min-tab:h-[30rem] max-phone:w-[25rem] max-phone:h-[25rem] max-sm-phone:w-[22rem] max-sm-phone:h-[22rem] rounded-[50%]"
             ></div>
             <div

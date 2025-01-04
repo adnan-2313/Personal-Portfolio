@@ -1,7 +1,5 @@
 // import HeroImage from "../Utils/HeroImage.png";
 import { FaWhatsapp } from "react-icons/fa";
-import img from "../../public/web logo.png";
-import logo from "../../public/A_logo-transformed.png";
 
 const HeroSection = () => {
   return (
@@ -24,11 +22,11 @@ const HeroSection = () => {
         border-gray-700 p-[10px]   left-[0rem] max-xl:left-[0.5rem]   font-montserrat text-white bottom-[2rem] max-lg:bottom-[23rem]  text-xl rounded-[50%] "
         >
           <img
-            src={img}
+            src="./web logo.png"
             className="w-[7.125rem] max-phone:w-[5.125rem]  top-0 animate-[spin_10s_linear_infinite]"
           />
           <img
-            src={logo}
+            src="./FavIcon.png"
             className="absolute  w-[2.2rem] max-phone:w-[1.8rem] max-phone:top-[2.2rem]  max-phone:left-[2.4rem]  top-[2.9rem] left-[3rem] "
           />
           {/* <span className="absolute left-[2.5rem] text-[0.8rem] top-[3.4rem]">HIRE ME</span> */}
@@ -51,12 +49,12 @@ const HeroSection = () => {
           target="_blank"
           className=" bg-background-gradient  mt-[54px] 
         transition-[all_.5s] w-[21rem] hover:bg-[#0a4641] text-[1.15rem] rounded-[3.75rem] 
-        p-[.5rem_.5rem_.5rem_2rem] text-[#c6ffec] flex flex-row cursor-pointer justify-between items-center 
+        p-[.5rem_.5rem_.5rem_2rem] text-[#e4f7f1] flex flex-row cursor-pointer justify-between items-center 
         hover:bg-[linear-gradient(98deg_#02b09b61_#02b09b33)] hover:translate-y-[-1px]
          hover:shadow-[0_20px_40px_#2db58633]  max-lg:py-[.6rem] max-phone:w-[18rem] max-phone:py-[.4rem] border-[1px] border-[#ffffff1f]"
         >
           <div className="font-[400] max-phone:text-[0.9rem] ">
-            Let's Chat On WhatsApp
+            Let&apos;s Chat On WhatsApp
           </div>
           <span
             className="rounded-[50%] bg-[#18ffb0] max text-black flex justify-center items-center text-[2.2rem]  

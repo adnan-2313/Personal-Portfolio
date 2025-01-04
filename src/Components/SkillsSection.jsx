@@ -26,8 +26,8 @@ const SkillsSection = () => {
           {skills.map((items, index) => {
             return (
               <div
-                className="z-[4] bg-[rgba(89,91,115,0.1)] rounded-[1.25rem] border-[1px] border-[rgba(89,91,115,0.5)]  
-              backdrop-blur-[40px] text-white w-[25rem] max-sm:w-[20rem]"
+                className="z-[4] bg-[rgba(89,91,115,0.1)] backdrop-blur-3xl rounded-[1.25rem] border-[1px] border-[rgba(89,91,115,0.5)]  
+             text-white w-[25rem] max-sm:w-[20rem]"
                 key={index}
               >
                 <div className=" flex flex-col justify-center  p-[40px_30px] max-sm:p-[25px_20px]  ">
@@ -39,7 +39,7 @@ const SkillsSection = () => {
                       return (
                         <div
                           key={index}
-                          className="flex text-[1.15rem] max-sm:text-[1rem] border-[1px] rounded-[1rem] border-[#bfe6d559] p-[10px_15px]  
+                          className="flex text-[1.15rem] backdrop-blur-3xl max-sm:text-[1rem] border-[1px] rounded-[1rem] border-[#bfe6d559] p-[10px_15px]  
                       items-center gap-2"
                         >
                           <img
