@@ -163,7 +163,7 @@ export const education = [
 
 export const projects = [
   {
-    id: 1,
+    id: 0,
     title: "Talent Hive",
     date: "Nov 2024",
     description:
@@ -174,21 +174,21 @@ export const projects = [
     github: "https://github.com/adnan-2313/talent-Hive",
     webapp: "https://talenthive-jobportal.vercel.app/",
   },
+  {
+    id: 1,
+    title: "Heaven Yard",
+    date: "Dec 2024",
+    description:
+      " Full-Stack Job Portal built using React JS, Tailwind CSS, Supabase, Clerk for authentication, and Shadcn UI, showcasing seamless job search and user management functionality.",
+    image: "https://i.imgur.com/rzZzKVM.jpg",
+    tags: ["React JS", "Tailwind CSS", "Supabase", "Clerk", "Shadcn UI"],
+    category: "web app",
+    github: "https://github.com/adnan-2313/heaven-yard",
+    webapp: "https://heaven-yard.vercel.app/",
+  },
 
   {
     id: 2,
-    title: "Destina: AI Trip Planner",
-    date: "APR 2024",
-    description:
-      "Destina is an AI-powered trip planning platform enhanced with OpenAI's capabilities, making travel planning smarter and more conversational. The integration of OpenAI enables natural language interactions, personalized suggestions, and real-time assistance, delivering an intuitive and engaging experience for users. Destina combines cutting-edge AI with intelligent trip planning to craft memorable journeys effortlessly.",
-    image: "https://i.imgur.com/4gz0EK9.jpg",
-    tags: ["React Js", "Tailwind CSS", "Firebase", "OPEN AI Model"],
-    category: "web app",
-    github: "#",
-    webapp: "#",
-  },
-  {
-    id: 3,
     title: "Movies Pilot",
     date: "Oct 2024",
     description:
@@ -196,7 +196,19 @@ export const projects = [
     image: "https://i.imgur.com/kSoUdvI.png",
     tags: ["React Js", "Redux Toolkit", "Javascript", "Tailwind CSS"],
     category: "web app",
-    github: "#",
+    github: "https://github.com/adnan-2313/movies-pilot",
+    webapp: "https://movies-pilot.vercel.app/",
+  },
+  {
+    id: 3,
+    title: "Destina: AI Trip Planner",
+    date: "APR 2024",
+    description:
+      "Destina is an AI-powered trip planning platform enhanced with OpenAI's capabilities, making travel planning smarter and more conversational. The integration of OpenAI enables natural language interactions, personalized suggestions, and real-time assistance, delivering an intuitive and engaging experience for users. Destina combines cutting-edge AI with intelligent trip planning to craft memorable journeys effortlessly.",
+    image: "https://i.imgur.com/4gz0EK9.jpg",
+    tags: ["React Js", "Tailwind CSS", "Firebase", "OPEN AI Model"],
+    category: "web app",
+    github: "https://github.com/adnan-2313/Destina",
     webapp: "#",
   },
   {
@@ -218,7 +230,7 @@ export const projects = [
       "API Intergration",
     ],
     category: "web app",
-    github: "#",
+    github: "https://github.com/adnan-2313/StudentLiveSystem",
     webapp: "#",
   },
 
@@ -236,29 +248,31 @@ export const projects = [
   },
 ];
 
+import { Mail, Github, Linkedin, Code } from "lucide-react";
+
 export const socialMedia = [
   {
     id: 0,
     title: "LEET CODE",
     link: "https://leetcode.com/u/code_adnan54/",
-    icon: "",
+    icon: Code, // Reference to the Lucide Code icon
   },
   {
     id: 1,
     title: "GITHUB",
     link: "https://github.com/adnan-2313",
-    icon: "",
+    icon: Github, // Reference to the Lucide Github icon
   },
   {
     id: 2,
     title: "LINKEDIN",
     link: "https://www.linkedin.com/in/adnankhan123/",
-    icon: "",
+    icon: Linkedin, // Reference to the Lucide Linkedin icon
   },
   {
     id: 3,
     title: "EMAIL ME",
     link: "mailto:ak567845@gmail.com",
-    icon: "",
+    icon: Mail, // Reference to the Lucide Mail icon
   },
 ];

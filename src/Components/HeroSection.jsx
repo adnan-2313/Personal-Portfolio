@@ -37,7 +37,7 @@ const HeroSection = () => {
         <h1 className="bg-gradient-to-tr from-[#2cf8ff]  to-[#18ffb0] bg-clip-text text-transparent text-[.875rem] ">
           FRONT END DEVELOPER & PROGRAMMER
         </h1>
-        <p className="font-spaceGrotesk text-[3.8rem] max-lg:text-[3rem] max-sm:text-[2.25rem] max-sm-phone:text-[2.15rem] max-sm:leading-tight w-[100%]  p-[20px_21px_0px_0px]   border-white font-semibold leading-[3.8rem]">
+        <p className="font-spaceGrotesk text-[3.8rem] max-lg:text-[3rem] max-sm:text-[2.25rem] max-sm-phone:text-[2rem] max-sm:leading-9 w-[100%]  p-[20px_21px_0px_0px]   border-white font-semibold leading-[3.8rem]">
           Ambitious Front End Developer Ready to Bring Ideas to Life
         </p>
         <p className="text-gray-300 text-[1.1rem] font-medium mt-[20px] w-[75%] max-md:w-[90%] max-phone:w-[87%] max-phone:text-[1rem] leading-[1.4rem]">
